@@ -20,7 +20,9 @@ install .bash_aliases ~
 source ~/.bash_aliases
 
 # install nvim, and friends
-sudo apt-get install -y xsel nvim
+sudo add-apt-repository -y ppa:neovim-ppa/unstable
+sudo apt-get update
+sudo apt-get install -y xsel neovim
 install init.vim ~/.config/nvim
 
 # install vim-plug
